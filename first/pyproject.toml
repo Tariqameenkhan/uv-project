@@ -1,0 +1,27 @@
+[project]
+name = "first"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "TARIQAMEENKHAN", email = "tariqameen097@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "litellm>=1.59.9",
+    "ruff>=0.9.3",
+]
+
+[project.scripts]
+2 = "first:main.main"
+1 = "first:main.hello"
+3 = "first:main.run_both"
+llm = "first:llm.gemini"
+llm2 = "first:llm.gemini2"
+app = "first:app.main"
+
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
